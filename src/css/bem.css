@@ -1,0 +1,210 @@
+/* БЭМ-блоки приложения */
+
+/* app */
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app__sidebar {
+  flex-shrink: 0;
+}
+
+.app__sidebar-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.app__sidebar-title {
+  font-weight: 600;
+}
+
+.app__sidebar-subtitle {
+  color: var(--muted-foreground);
+}
+
+.app__nav {
+  flex: 1;
+  overflow: auto;
+}
+
+.app__nav-section-title {
+  color: var(--muted-foreground);
+}
+
+.app__nav-item {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.app__nav-item--active {
+  font-weight: 500;
+}
+
+.app__header {
+  flex-shrink: 0;
+}
+
+.app__header-title {
+  font-size: 1.25rem;
+}
+
+.app__main {
+  flex: 1;
+  overflow: auto;
+}
+
+.app__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+}
+
+/* page */
+.page {
+  padding: 1.5rem;
+}
+
+.page__header {
+  margin-bottom: 1.5rem;
+}
+
+.page__title {
+  margin: 0;
+}
+
+.page__description {
+  color: var(--muted-foreground);
+}
+
+/* card */
+.card {
+  border-radius: var(--radius);
+}
+
+.card__header {
+  padding-top: 1.5rem;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__description {
+  color: var(--muted-foreground);
+}
+
+.card__content {
+  padding-bottom: 1.5rem;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+/* form */
+.form__group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form__label {
+  font-weight: 500;
+}
+
+/* field */
+.field__input,
+.field__select,
+.field__textarea {
+  width: 100%;
+}
+
+/* select */
+.select {
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.select__trigger {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.select__content {
+  box-sizing: border-box;
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+}
+
+.modal__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 50%);
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__title {
+  font-weight: 600;
+}
+
+.modal__description {
+  color: var(--muted-foreground);
+}
+
+/* login */
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__brand {
+  text-align: center;
+}
+
+.login__card {
+  width: 100%;
+  max-width: 28rem;
+}
+
+/* notifications */
+.notifications {
+  position: relative;
+}
+
+.notifications__panel {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 50;
+}
+
+.notifications__item--unread {
+  background: color-mix(in oklab, var(--accent) 50%, transparent);
+}
+
+/* role */
+.role-card__icon {
+  border-radius: 0.5rem;
+}
+
+.role-card__permissions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
